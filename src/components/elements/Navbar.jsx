@@ -9,15 +9,15 @@ export default function Navbar() {
           <a href="#about">About</a>
         </span>
         <span>
-          <a href="#">Features</a>
+          <a href="#features">Features</a>
         </span>
       </div>
       <div className="uppercase flex flex-row gap-[38px] items-center">
         <span>
-          <a href="#">Products</a>
+          <a href="#products">Products</a>
         </span>
         <span>
-          <a href="#">Our Teamm</a>
+          <a href="#teams">Our Team</a>
         </span>
 
         <span className="py-[12px] px-[15px] bg-[#5956E9] text-white rounded-[5px]">

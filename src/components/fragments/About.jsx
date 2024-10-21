@@ -1,5 +1,5 @@
 import AboutContent from "../elements/AboutContent";
-import AboutHeader from "../elements/AboutHeader";
+import AboutHeader from "../elements/SectionHeader";
 
 const item = [
   {
@@ -19,7 +19,15 @@ export default function About() {
       className="mx-[182px] my-[120px] flex flex-col gap-[60px]"
       id="about"
     >
-      <AboutHeader />
+      <AboutHeader
+        title="About Our Product"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia,
+        laborum iste placeat illo odio nesciunt nostrum cupiditate incidunt
+        exercitationem est expedita? Pariatur nulla voluptatem accusantium,
+        vitae omnis cumque non."
+        color="text-[#232233]"
+        descColor="text-[#6C6C72]"
+      />
       <div className="flex flex-row justify-between w-full">
         <img src="public/images/about-image.png" />
         <div className="flex flex-col gap-10">

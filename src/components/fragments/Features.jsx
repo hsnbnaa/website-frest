@@ -1,10 +1,21 @@
 import FeaturesContent from "../elements/FeaturesContent";
-import FeaturesHeader from "../elements/FeaturesHeader";
+import FeaturesHeader from "../elements/SectionHeader";
 
 export default function Features() {
   return (
-    <section className="px-[182px] py-[120px] flex flex-col bg-bgFeatures bg-cover bg-no-repeat min-h-screen gap-[60px]">
-      <FeaturesHeader />
+    <section
+      className="px-[182px] py-[120px] flex flex-col bg-bgFeatures bg-cover bg-no-repeat min-h-screen gap-[60px]"
+      id="features"
+    >
+      <FeaturesHeader
+        title="App Features"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia,
+        laborum iste placeat illo odio nesciunt nostrum cupiditate incidunt
+        exercitationem est expedita? Pariatur nulla voluptatem accusantium,
+        vitae omnis cumque non."
+        color="text-white"
+        descColor="text-white"
+      />
       <div className="flex flex-col items-center relative">
         <FeaturesContent text="text-center" items="items-center" />
         <div className="flex h-[850px] w-[90%] my-[120px] justify-between">
@@ -20,7 +31,7 @@ export default function Features() {
         <FeaturesContent text="text-center" items="items-center" />
         <img
           src="public/svg/feature-image.svg"
-          className="w-auto h-[1200px] items-center ml-14 absolute top-[244px] left-[-10px]"
+          className="w-auto h-[1200px] items-center ml-14 absolute top-[244px] left-[-7px]"
         />
       </div>
     </section>
