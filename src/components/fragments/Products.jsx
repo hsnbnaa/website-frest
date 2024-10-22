@@ -13,8 +13,8 @@ export default function Products() {
         laborum iste placeat illo odio nesciunt nostrum cupiditate incidunt
         exercitationem est expedita? Pariatur nulla voluptatem accusantium,
         vitae omnis cumque non."
-        color="#232233"
-        descColor="#6C6C72"
+        color="text-[#232233]"
+        descColor="text-[#6C6C72]"
       />
       <ProductsContent />
     </section>

@@ -1,19 +1,19 @@
+import FeedbackCard from "../elements/FeedbackCard";
 import SectionHeader from "../elements/SectionHeader";
-import TeamsCard from "../elements/TeamsCard";
 
-export default function Teams() {
+export default function Feedback() {
   return (
-    <section className="my-[170px] mx-[182px]" id="teams">
+    <section className="px-[182px] py-[120px] h-screen bg-bgHero bg-cover bg-no-repeat">
       <SectionHeader
-        title="Our Reative Team"
+        title="Our Happy Customers"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia,
         laborum iste placeat illo odio nesciunt nostrum cupiditate incidunt
         exercitationem est expedita? Pariatur nulla voluptatem accusantium,
         vitae omnis cumque non."
-        color="text-[#232233]"
-        descColor="text-[#6C6C72]"
+        color="text-white"
+        descColor="text-white"
       />
-      <TeamsCard />
+      <FeedbackCard />
     </section>
   );
 }

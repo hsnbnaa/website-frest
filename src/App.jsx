@@ -6,6 +6,7 @@ import Features from "./components/fragments/Features";
 import Products from "./components/fragments/Products";
 import Teaser from "./components/fragments/Teaser";
 import Teams from "./components/fragments/Teams";
+import Feedback from "./components/fragments/Feedback";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Products />
       <Teaser />
       <Teams />
+      <Feedback />
     </main>
   );
 }
