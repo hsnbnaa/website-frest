@@ -1,11 +1,13 @@
 export default function FeaturesContent({ text, items }) {
   return (
-    <div className={`flex flex-col gap-5 ${items} w-[400px]`}>
+    <div
+      className={`flex flex-col gap-5 ${items} w-[400px] max-[1919px]:w-[300px]`}
+    >
       <img src="public/svg/comment-icon.svg" className="w-[50px] h-[50px] " />
-      <h5 className="uppercase text-[25px] font-semibold text-white">
+      <h5 className="uppercase text-[25px]  max-[1919px]:text-[20px] font-semibold text-white">
         Full Free Chat
       </h5>
-      <p className={`text-[20px] text-white ${text}`}>
+      <p className={`text-[20px] max-[1919px]:text-[16px] text-white ${text}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         saepe dolorum recusandae illo provident earum dolor voluptatum quo
       </p>

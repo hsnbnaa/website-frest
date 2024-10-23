@@ -2,18 +2,25 @@ export default function TeamsContent() {
   return (
     <>
       <div className="flex justify-center items-center relative">
-        <img src="public/images/profile-circle.png" alt="" />
-        <img src="public/images/profile-image.png" className="absolute" />
+        <img
+          src="public/images/profile-circle.png"
+          alt=""
+          className="max-[1919px]:w-[180px] h-auto"
+        />
+        <img
+          src="public/images/profile-image.png"
+          className="absolute max-[1919px]:w-[158px] h-auto"
+        />
       </div>
-      <div className="mt-[60px] flex flex-col items-center">
-        <h4 className="text-[36px] font-bold uppercase text-[#232233]">
+      <div className="mt-[60px] max-[1919px]:mt-[40px] flex flex-col items-center">
+        <h4 className="text-[36px] max-[1919px]:text-[26px] font-bold uppercase text-[#232233]">
           Craig Gouse
         </h4>
-        <h6 className="text-[24px] text-[#6C6C72] uppercase font-semibold">
+        <h6 className="text-[24px] max-[1919px]:text-[12px] text-[#6C6C72] uppercase font-semibold">
           UI/UX Designer
         </h6>
       </div>
-      <p className="mt-[20px] text-[16px] text-[#6C6C72] w-[70%] text-center">
+      <p className="mt-[20px] max-[1919px]:text-[10px] text-[16px]  text-[#6C6C72] w-[70%] text-center">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
         minima vitae quia maxime debitis numquam vel placeat dolor ipsum eos
         fugit sit, aliquam a, sequi molestiae animi, porro doloremque iste.

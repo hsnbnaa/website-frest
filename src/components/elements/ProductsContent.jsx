@@ -54,7 +54,10 @@ export default function ProductsContent() {
       >
         <div className="mx-[100px]">
           {slides.map((slide) => (
-            <SwiperSlide key={slide.id} className="w-[300px] mb-12">
+            <SwiperSlide
+              key={slide.id}
+              className="w-[300px] max-[1919px]:w-[200px] mb-12 max-[1919px]:mb-14"
+            >
               <img src={slide.image} alt={`Image ${slide.id}`} />
             </SwiperSlide>
           ))}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/fragments/Header";
 import Hero from "./components/fragments/Hero";
 import About from "./components/fragments/About";
@@ -11,7 +10,7 @@ import Feedback from "./components/fragments/Feedback";
 function App() {
   return (
     <main>
-      <section className="h-screen bg-bgHero bg-cover relative">
+      <section className="h-screen bg-bgHero bg-cover flex flex-col">
         <Header />
         <Hero />
       </section>

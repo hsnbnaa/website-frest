@@ -28,3 +28,15 @@
   font-size: 25px;
   font-weight: 900;
 }
+
+@media (max-width: 1919px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}

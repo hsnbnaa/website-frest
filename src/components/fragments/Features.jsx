@@ -18,7 +18,7 @@ export default function Features() {
       />
       <div className="flex flex-col items-center relative">
         <FeaturesContent text="text-center" items="items-center" />
-        <div className="flex h-[850px] w-[90%] my-[120px] justify-between">
+        <div className="flex h-[850px] max-[1919px]:h-[550px] w-[90%] my-[120px] justify-between">
           <div className="flex flex-col justify-between">
             <FeaturesContent text="text-right" items="items-end" />
             <FeaturesContent text="text-right" items="items-end" />
@@ -31,7 +31,7 @@ export default function Features() {
         <FeaturesContent text="text-center" items="items-center" />
         <img
           src="public/svg/feature-image.svg"
-          className="w-auto h-[1200px] items-center ml-14 absolute top-[244px] left-[-7px]"
+          className="w-auto h-[1200px] max-[1919px]:h-[900px] items-center ml-14 absolute top-[244px] max-[1919px]:top-[200px] left-[-20px]"
         />
       </div>
     </section>
