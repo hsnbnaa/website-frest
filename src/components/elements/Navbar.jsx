@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="flex flex-row justify-between items-center text-[20px] font-semibold text-[#232233] max-[1919px]:text-[18px]">
+    <nav className="flex flex-row justify-between items-center text-[20px] min-[2500px]:text-2xl font-semibold text-[#232233] max-[1919px]:text-[18px] max-[691px]:hidden">
       <div className="uppercase flex flex-row gap-[38px] pl-[47px]">
         <span>
           <a href="#">Home</a>

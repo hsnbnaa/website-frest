@@ -1,16 +1,23 @@
 export default function AboutContent({ title }) {
   return (
-    <div className="flex gap-5 items-start w-[800px] max-[1919px]:w-[680px] bg-white rounded-[10px] px-5 pt-[30px] pb-[23px] shadow-lg">
-      <img src="public/svg/check-about.svg" alt="" />
+    <div className="flex gap-5 items-center w-[800px] min-[2500px]:w-[1000px] max-[1919px]:w-[680px] max-[415px]:w-[343px] bg-white rounded-[10px] px-5 pt-[30px] pb-[23px] shadow-lg">
+      <img
+        src="public/svg/check-about.svg"
+        alt=""
+        className="min-[2500px]:h-[34px] w-auto self-baseline"
+      />
       <div className="flex flex-col gap-3">
-        <h6 className="uppercase text-2xl max-[1919px]:text-lg font-semibold text-[#232233]">
+        <h6 className="uppercase text-2xl min-[2500px]:text-4xl max-[1919px]:text-lg max-[415px]:text-xl font-semibold text-[#232233]">
           {title}
         </h6>
-        <p className="text-lg max-[1919px]:text-[16px] text-[#6C6C72]">
+        <p className="text-lg min-[2500px]:text-2xl max-[1919px]:text-[16px] text-[#6C6C72] max-[850px]:hidden">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero at iure
           accusamus cupiditate quod illum nulla corrupti. Vitae, ab
           exercitationem eum autem vero commodi, neque, quos similique quam sint
           provident!
+        </p>
+        <p className="text-lg min-[2500px]:text-2xl max-[1919px]:text-[16px] text-[#6C6C72] min-[850px]:hidden">
+          Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
         </p>
       </div>
     </div>

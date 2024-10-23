@@ -8,7 +8,7 @@ import FeedbackContent from "../atoms/FeedbackContent";
 export default function FeedbackCard() {
   return (
     <Swiper
-      className="mt-[60px]  w-full flex items-center"
+      className="mt-[60px] min-[2500px]:mt-[120px] w-full flex items-center"
       modules={[Autoplay, Pagination, EffectCoverflow]}
       effect={"coverflow"}
       autoplay={{ delay: 5000 }}
@@ -25,17 +25,27 @@ export default function FeedbackCard() {
         modifier: 1.5,
         slideShadows: true,
       }}
+      breakpoints={{
+        414: {
+          slidesPerView: 1,
+          effect: "slide",
+          initialSlide: 0,
+        },
+      }}
     >
-      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] max-[1919px]:w-[600px]">
+      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] min-[2500px]:w-[1100px] max-[1919px]:w-[600px] mb-[70px]">
         <FeedbackContent />
       </SwiperSlide>
-      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] max-[1919px]:w-[600px]">
+      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] min-[2500px]:w-[1100px] max-[1919px]:w-[600px] mb-[70px]">
         <FeedbackContent />
       </SwiperSlide>
-      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] max-[1919px]:w-[600px]">
+      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] min-[2500px]:w-[1100px] max-[1919px]:w-[600px] mb-[70px]">
         <FeedbackContent />
       </SwiperSlide>
-      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] max-[1919px]:w-[600px]">
+      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] min-[2500px]:w-[1100px] max-[1919px]:w-[600px] mb-[70px]">
+        <FeedbackContent />
+      </SwiperSlide>
+      <SwiperSlide className="flex flex-col items-center px-[60px] pt-10 pb-[35px] bg-white rounded-[10px] shadow-lg w-[800px] min-[2500px]:w-[1100px] max-[1919px]:w-[600px] mb-[70px]">
         <FeedbackContent />
       </SwiperSlide>
     </Swiper>

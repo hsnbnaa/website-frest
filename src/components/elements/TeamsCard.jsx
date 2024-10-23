@@ -14,6 +14,11 @@ export default function TeamsCard() {
       grabCursor={true}
       slidesPerView={3}
       spaceBetween={30}
+      breakpoints={{
+        414: {
+          slidesPerView: 1,
+        },
+      }}
     >
       <SwiperSlide className=" pt-[30px] pb-[50px] rounded-[10px] shadow-lg flex flex-col items-center w-[370px] mb-[30px] mt-[10px]">
         <TeamsContent />

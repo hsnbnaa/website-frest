@@ -56,15 +56,19 @@ export default function ProductsContent() {
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="w-[300px] max-[1919px]:w-[200px] mb-12 max-[1919px]:mb-14"
+              className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto mb-12 min-[2500px]:mb-20 max-[1919px]:mb-14"
             >
-              <img src={slide.image} alt={`Image ${slide.id}`} />
+              <img
+                src={slide.image}
+                alt={`Image ${slide.id}`}
+                className="min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto"
+              />
             </SwiperSlide>
           ))}
         </div>
       </Swiper>
-      <button className="swiper-button-next right-[-110px]"></button>{" "}
-      <button className="swiper-button-prev left-[-110px]"></button>
+      <button className="swiper-button-next right-[-110px] min-[2500px]:right-[-180px]"></button>{" "}
+      <button className="swiper-button-prev left-[-110px] min-[2500px]:left-[-180px]"></button>
     </div>
   );
 }

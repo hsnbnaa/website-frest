@@ -4,6 +4,10 @@
   height: 16px;
 }
 
+#feedback .swiper-pagination-bullet {
+  background-color: white;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: white;
@@ -29,6 +33,23 @@
   font-weight: 900;
 }
 
+@media (min-width: 2500px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 50px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 1919px) {
   .swiper-button-next,
   .swiper-button-prev {
@@ -38,5 +59,12 @@
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }

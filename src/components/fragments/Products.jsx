@@ -4,7 +4,7 @@ import ProductsHeader from "../elements/SectionHeader";
 export default function Products() {
   return (
     <section
-      className="mx-[202px] my-[120px] flex flex-col gap-[60px]"
+      className="mx-[202px] max-[415px]:mx-[50px] min-[2500px]:mx-[300px] mt-[120px] min-[2500px]:mt-0 min-[2500px]:pt-[120px] flex flex-col gap-[60px]"
       id="products"
     >
       <ProductsHeader

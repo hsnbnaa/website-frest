@@ -10,7 +10,7 @@ import Feedback from "./components/fragments/Feedback";
 function App() {
   return (
     <main>
-      <section className="h-screen bg-bgHero bg-cover flex flex-col">
+      <section className="h-screen max-[415px]:h-[1027px] bg-bgHero bg-cover flex flex-col">
         <Header />
         <Hero />
       </section>
