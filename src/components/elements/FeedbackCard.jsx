@@ -26,10 +26,16 @@ export default function FeedbackCard() {
         slideShadows: true,
       }}
       breakpoints={{
-        414: {
+        375: {
           slidesPerView: 1,
           effect: "slide",
           initialSlide: 0,
+        },
+        850: {
+          slidesPerView: "auto",
+          effect: "coverflow",
+          spaceBetween: 30,
+          centeredSlides: true,
         },
       }}
     >

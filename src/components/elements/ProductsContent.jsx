@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -51,17 +52,29 @@ export default function ProductsContent() {
           modifier: 1.5,
           slideShadows: true,
         }}
+        watchSlidesProgress={true}
+        watchSlidesVisibility={true}
+        breakpoints={{
+          375: {
+            spaceBetween: 50,
+          },
+          850: {
+            slidesPerView: "auto",
+            effect: "coverflow",
+            spaceBetween: 30,
+          },
+        }}
       >
         <div className="mx-[100px]">
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto mb-12 min-[2500px]:mb-20 max-[1919px]:mb-14"
+              className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto mb-12 min-[2500px]:mb-20 max-[1919px]:mb-14  max-[415px]:flex max-[415px]:justify-center"
             >
               <img
                 src={slide.image}
                 alt={`Image ${slide.id}`}
-                className="min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto"
+                className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto"
               />
             </SwiperSlide>
           ))}
