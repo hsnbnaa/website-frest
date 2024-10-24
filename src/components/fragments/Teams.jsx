@@ -4,7 +4,7 @@ import TeamsCard from "../elements/TeamsCard";
 export default function Teams() {
   return (
     <section
-      className="py-[170px] mx-[182px] max-[415px]:mx-[50px] min-[2500px]:mx-[282px]"
+      className="py-[170px] mx-[182px] max-[1100px]:mx-[50px] max-[430px]:mx-[50px] min-[2500px]:mx-[282px]"
       id="teams"
     >
       <SectionHeader

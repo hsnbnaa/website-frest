@@ -15,10 +15,13 @@ export default function TeamsCard() {
       slidesPerView={3}
       spaceBetween={30}
       breakpoints={{
-        375: {
+        320: {
           slidesPerView: 1,
         },
-        850: {
+        800: {
+          slidesPerView: 2,
+        },
+        1100: {
           slidesPerView: 3,
         },
       }}

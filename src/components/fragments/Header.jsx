@@ -6,24 +6,28 @@ export default function Header() {
   const [active, setActive] = useState(false);
 
   return (
-    <header className="pt-[70px] max-[415px]:pt-[40px] mx-[182px] max-[415px]:mx-[50px] flex justify-center">
-      <div className="p-[5px] bg-white rounded-[5px] min-w-[1580px] min-[2500px]:min-w-[1800px] max-[1919px]:min-w-[1280px] max-[415px]:min-w-[360px] z-30">
-        <div className="flex justify-between relative min-[1024px]:hidden">
+    <header className="pt-[70px] max-[900px]:pt-[50px] max-[430px]:pt-[40px] mx-[182px] max-[1426px]:mx-[112px] max-[1300px]:mx-[82px] max-[1100px]:mx-[50px] max-[430px]:mx-[20px] flex justify-center">
+      <div
+        className={`p-[5px] bg-white ${
+          active ? "rounded-t-[5px]" : "rounded-[5px]"
+        } w-[1580px] min-[2500px]:w-[1800px] max-[1919px]:w-[1280px] max-[430px]:w-[360px] z-30`}
+      >
+        <div className="flex justify-between relative min-[930px]:hidden">
           <img
             src="public/svg/ham-menu.svg"
             alt=""
             onClick={() => setActive(!active)}
           />
-          {active && <Dropdown setActive={setActive} />}
-          <span className="uppercase py-[8px] px-[6px] bg-[#5956E9] text-[10px] text-white rounded-[5px]">
+          <Dropdown active={active} setActive={setActive} />
+          <span className="uppercase py-[8px] px-[6px] bg-[#5956E9] max-[430px]:text-[10px] max-[930px]:text-[20px] text-white rounded-[5px]">
             <a href="#">Order Now</a>
           </span>
         </div>
         <Navbar />
-        <div className="w-full relative">
+        <div className="w-full flex justify-center items-center relative">
           <img
             src="public/images/logo.png"
-            className="absolute z-20 translate-x-[300%] top-[-80px] max-[415px]:top-[-45px] min-[2500px]:translate-x-[370%] max-[1919px]:translate-x-[230%] max-[415px]:translate-x-[130%] max-[415px]:w-[100px] max-[415px]:h-[60px]"
+            className="absolute z-20 top-[-80px] max-[930px]:top-[-70px] max-[430px]:top-[-45px] max-[930px]:w-[200px] max-[430px]:w-[100px] max-[930px]:h-[90px] max-[430px]:h-[60px]"
           />
         </div>
       </div>

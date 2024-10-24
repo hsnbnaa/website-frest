@@ -2,7 +2,7 @@ export default function FeedbackContent() {
   return (
     <>
       <img src="/images/customer-1.png" alt="" />
-      <h4 className="text-[36px] min-[2500px]:text-[46px] max-[1919px]:text-[26px] font-bold uppercase text-[#232233] mt-5">
+      <h4 className="text-[36px] min-[2500px]:text-[46px] max-[1919px]:text-[26px] font-bold uppercase text-[#232233] mt-5 max-[361px]:text-center">
         Ann Lubin
       </h4>
       <h6 className="text-[20px] min-[2500px]:text-[28px] max-[1919px]:text-[16px] text-[#233233] uppercase font-semibold">

@@ -5,18 +5,18 @@ export default function TeamsContent() {
         <img
           src="public/images/profile-circle.png"
           alt=""
-          className="min-[2500px]:w-[250px] max-[1919px]:w-[180px] max-[415px]:w-[150px] h-auto"
+          className="min-[2500px]:w-[250px] max-[1919px]:w-[180px] max-[430px]:w-[150px] h-auto"
         />
         <img
           src="public/images/profile-image.png"
-          className="absolute min-[2500px]:w-[228px] max-[1919px]:w-[158px] max-[415px]:w-[128px] h-auto"
+          className="absolute min-[2500px]:w-[228px] max-[1919px]:w-[158px] max-[430px]:w-[128px] h-auto"
         />
       </div>
       <div className="mt-[60px] max-[1919px]:mt-[40px] flex flex-col items-center">
-        <h4 className="text-[36px] min-[2500px]:text-[46px] max-[1919px]:text-[26px] max-[415px]:text-[24px] font-bold uppercase text-[#232233]">
+        <h4 className="text-[36px] min-[2500px]:text-[46px] max-[1919px]:text-[26px] max-[430px]:text-[24px] font-bold uppercase text-[#232233]">
           Craig Gouse
         </h4>
-        <h6 className="text-[24px] min-[2500px]:text-[30px] max-[1919px]:text-[12px] max-[415px]:text-[16px] text-[#6C6C72] uppercase font-semibold">
+        <h6 className="text-[24px] min-[2500px]:text-[30px] max-[1919px]:text-[12px] max-[430px]:text-[16px] text-[#6C6C72] uppercase font-semibold">
           UI/UX Designer
         </h6>
       </div>
@@ -29,22 +29,22 @@ export default function TeamsContent() {
         <img
           src="/svg/fb-icon.svg"
           alt=""
-          className="px-[35px] max-[415px]:px-[25px] min-[2500px]:h-[34px] max-[415px]:h-[20px] w-auto"
+          className="px-[35px] max-[1426px]:px-[30px] max-[1300px]:px-[25px] max-[430px]:px-[25px] min-[2500px]:h-[34px] max-[430px]:h-[20px] max-[361px]:h-[16px] w-auto"
         />
         <img
           src="/svg/ig-icon.svg"
           alt=""
-          className="border-x border-[#6C6C72] px-[35px] max-[415px]:px-[25px] min-[2500px]:h-[34px] max-[415px]:h-[20px] w-auto"
+          className="border-x border-[#6C6C72] px-[35px] max-[1426px]:px-[30px] max-[1300px]:px-[25px] max-[430px]:px-[25px] min-[2500px]:h-[34px] max-[430px]:h-[20px] max-[361px]:h-[16px] w-auto"
         />
         <img
           src="/svg/tw-icon.svg"
           alt=""
-          className="px-[35px] max-[415px]:px-[25px] border-r border-[#6C6C72] min-[2500px]:h-[34px] max-[415px]:h-[20px] w-auto"
+          className="px-[35px] max-[1426px]:px-[30px] max-[1300px]:px-[25px] max-[430px]:px-[25px] border-r border-[#6C6C72] min-[2500px]:h-[34px] max-[430px]:h-[20px] max-[361px]:h-[16px] w-auto"
         />
         <img
           src="/svg/yt-icon.svg"
           alt=""
-          className="px-[35px] max-[415px]:px-[25px] min-[2500px]:h-[34px] max-[415px]:h-[20px] w-auto"
+          className="px-[35px] max-[1426px]:px-[30px] max-[1300px]:px-[25px] max-[430px]:px-[25px] min-[2500px]:h-[34px] max-[430px]:h-[20px] max-[361px]:h-[16px] w-auto"
         />
       </div>
     </>

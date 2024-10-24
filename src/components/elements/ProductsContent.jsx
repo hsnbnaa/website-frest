@@ -9,21 +9,13 @@ import "./swiper-custom.css";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const slides = [
-  { id: 1, image: "/images/image-1.png" },
-  { id: 2, image: "/images/image-2.png" },
-  { id: 3, image: "/images/image-3.png" },
-  { id: 4, image: "/images/image-4.png" },
-  { id: 5, image: "/images/image-5.png" },
-  { id: 6, image: "/images/image-1.png" },
-  { id: 7, image: "/images/image-2.png" },
-  { id: 8, image: "/images/image-3.png" },
-  { id: 9, image: "/images/image-4.png" },
-  { id: 10, image: "/images/image-5.png" },
-  { id: 11, image: "/images/image-1.png" },
-  { id: 12, image: "/images/image-2.png" },
-  { id: 13, image: "/images/image-3.png" },
-  { id: 14, image: "/images/image-4.png" },
-  { id: 15, image: "/images/image-5.png" },
+  { id: 1, image: "/images/cup_yellow.png" },
+  { id: 2, image: "/images/cup_red.png" },
+  { id: 3, image: "/images/cup_nila.png" },
+  { id: 4, image: "/images/cup_purple.png" },
+  { id: 5, image: "/images/cup_orange.png" },
+  { id: 6, image: "/images/cup_green.png" },
+  { id: 7, image: "/images/cup_blue.png" },
 ];
 
 export default function ProductsContent() {
@@ -50,12 +42,10 @@ export default function ProductsContent() {
           stretch: 50,
           depth: 150,
           modifier: 1.5,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        watchSlidesProgress={true}
-        watchSlidesVisibility={true}
         breakpoints={{
-          375: {
+          320: {
             spaceBetween: 50,
           },
           850: {
@@ -69,7 +59,7 @@ export default function ProductsContent() {
           {slides.map((slide) => (
             <SwiperSlide
               key={slide.id}
-              className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto mb-12 min-[2500px]:mb-20 max-[1919px]:mb-14  max-[415px]:flex max-[415px]:justify-center"
+              className="h-[552px] min-[2500px]:h-[852px] max-[1919px]:h-[452px] w-auto mb-12 min-[2500px]:mb-20 max-[1919px]:mb-14  max-[430px]:flex max-[430px]:justify-center"
             >
               <img
                 src={slide.image}

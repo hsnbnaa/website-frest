@@ -4,10 +4,10 @@ import ProductsHeader from "../elements/SectionHeader";
 export default function Products() {
   return (
     <section
-      className="mx-[202px] max-[415px]:mx-0 min-[2500px]:mx-[300px] mt-[120px] min-[2500px]:mt-0 min-[2500px]:pt-[120px] flex flex-col gap-[60px]"
+      className="mx-[202px] max-[1426px]:mx-[182px] max-[1300px]:mx-[152px] max-[430px]:mx-0 min-[2500px]:mx-[300px] mt-[120px] min-[2500px]:mt-0 min-[2500px]:pt-[120px] flex flex-col gap-[60px]"
       id="products"
     >
-      <div className="max-[415px]:mx-[50px]">
+      <div className="max-[430px]:mx-[50px]">
         <ProductsHeader
           title="Chekout Our Products Interface Look"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia,

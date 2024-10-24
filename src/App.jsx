@@ -7,6 +7,7 @@ import Products from "./components/fragments/Products";
 import Teaser from "./components/fragments/Teaser";
 import Teams from "./components/fragments/Teams";
 import Feedback from "./components/fragments/Feedback";
+import Footer from "./components/fragments/Footer";
 
 function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -41,8 +42,8 @@ function App() {
   };
 
   return (
-    <main className="relative">
-      <section className="h-screen max-[415px]:h-[1027px] bg-bgHero bg-cover flex flex-col">
+    <main className="relative overflow-x-hidden">
+      <section className="min-h-screen max-[430px]:min-h-[1027px] max-[900px]:min-h-[1024px] bg-bgHero bg-cover flex flex-col">
         <Header />
         <Hero />
       </section>
@@ -52,14 +53,16 @@ function App() {
       <Teaser />
       <Teams />
       <Feedback />
+      <Footer />
 
       {/* Tombol Scroll to Top */}
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed flex items-center bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-700 uppercase"
+          className="fixed flex gap-1 items-center bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-700 z-50"
         >
-          ↑ To Top
+          <span className="max-[430px]:hidden">Back to Top</span>
+          <img src="public/svg/to-up.svg" className="w-6 h-6" />
         </button>
       )}
     </main>

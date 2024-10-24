@@ -9,8 +9,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex flex-row justify-between items-center text-[20px] min-[2500px]:text-2xl font-semibold text-[#232233] max-[1919px]:text-[18px] max-[691px]:hidden">
-      <div className="uppercase flex flex-row gap-[38px] pl-[47px]">
+    <nav className="flex flex-row justify-between items-center text-[20px] min-[2500px]:text-2xl max-[1300px]:text-[16px] max-[1100px]:text-[14px] font-semibold text-[#232233] max-[1919px]:text-[18px] max-[900px]:hidden">
+      <div className="uppercase flex flex-row gap-[38px] max-[1100px]:gap-[30px] pl-[47px]">
         <span>
           <a className="cursor-pointer" onClick={() => scrollToSection("")}>
             Home
@@ -33,7 +33,7 @@ export default function Navbar() {
           </a>
         </span>
       </div>
-      <div className="uppercase flex flex-row gap-[38px] items-center">
+      <div className="uppercase flex flex-row gap-[38px] max-[1100px]:gap-[30px] items-center">
         <span>
           <a
             className="cursor-pointer"
